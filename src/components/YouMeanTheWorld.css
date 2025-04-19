@@ -1,0 +1,40 @@
+.youmean {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  .youmean h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .youmean p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .navigation button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s;
+  }
+  
+  .navigation button:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

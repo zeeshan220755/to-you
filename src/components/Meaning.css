@@ -1,0 +1,55 @@
+.meaning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 100vh;
+    animation: fadeIn 1s ease;
+  }
+  
+  .meaning h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 300px;
+    padding: 1.5rem;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: swipe 0.5s ease;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes swipe {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  

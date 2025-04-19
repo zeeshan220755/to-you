@@ -1,0 +1,43 @@
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+    background-color: #ffb6c1;
+    animation: fadeIn 1s ease;
+  }
+  
+  .ending h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .ending p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  
+  .final-button {
+    padding: 1rem 2rem;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .final-button:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

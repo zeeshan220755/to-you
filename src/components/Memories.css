@@ -1,0 +1,51 @@
+.memories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+    animation: fadeIn 1s ease;
+  }
+  
+  .memories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .photo-gallery img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navigation button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s;
+  }
+  
+  .navigation button:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
